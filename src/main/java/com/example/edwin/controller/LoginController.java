@@ -25,6 +25,7 @@ public class LoginController {
     public String login(String name,String password){
         UserBean userBean = userService.loginIn(name,password);
         if(userBean!=null){
+            System.out.println("10001");
             return "success";
         }else {
             return "error";
